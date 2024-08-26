@@ -332,6 +332,7 @@ export default function Home() {
               const response = await fetch(`http://localhost:8000/api/fetch?msg=${value}&url=${simplifyUrl(searchQuery)}`)
               console.log(response)
               await updateConversation()
+              // lolz
             }
                     
                     
