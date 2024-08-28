@@ -451,7 +451,7 @@ export default function Home() {
                     
                     }
                 }}
-                >SEND</button>
+                >SEND</button> 
               </div>
             </div> : <></>}
         </div>
