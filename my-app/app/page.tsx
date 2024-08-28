@@ -35,7 +35,7 @@ interface Dictionary {
     [key: string]: any; // 'any' can be replaced with more specific types if known
 }
 
-export async function fetchAttestationInputById(attestationId: string) {
+export async function fetchAttestationInputById(attestationId: string): Promise<Dictionary> {
   const res = await indexService.queryAttestation(attestationId);
   const dictionary: Dictionary = JSON.parse(res.data);
 
