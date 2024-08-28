@@ -1,3 +1,4 @@
+/*
 const urlMetadata = require('url-metadata');
 const cors = require('cors'); // Import the cors package
 const express = require('express');
@@ -33,3 +34,5 @@ app.get('/api/fetch', async (req, res) => {
 app.listen(port, () => {
   console.log(`Backend server running on http://localhost:${port}`);
 });
+
+*/
