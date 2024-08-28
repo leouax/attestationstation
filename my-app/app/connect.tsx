@@ -16,7 +16,6 @@ import {
   
 } from "@ethsign/sp-sdk";
 import RPC from "./ethersRPC";
-import { ethers } from 'ethers';
 import { privateKeyToAccount } from "viem/accounts";
 
 

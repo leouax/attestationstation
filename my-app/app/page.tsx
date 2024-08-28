@@ -1,27 +1,13 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 import styles from './page.module.css';
 import SearchBox from './searchbox';
 import ConnectButton from './connect';
 import { attest, getAddr, getPrivKey, loginExport } from './connect';
 import {
-  SignProtocolClient,
-  SpMode,
-  EvmChains,
-  OffChainSignType,
   IndexService
 } from "@ethsign/sp-sdk";
-import {IProvider} from "@web3auth/base";
-import { useWeb3Auth } from "@web3auth/modal-react-hooks";
-import NumberSelector from './NumberSelector';
-import { createWalletClient, custom, http } from "viem";
-import { privateKeyToAccount } from "viem/accounts";
-import { mainnet } from "viem/chains";
-import { toBytes } from "viem";
-import { generatePrivateKey } from "viem/accounts";
-import sendMsgExternal from "./xmtp-quickstart-node-groups/index"; 
 const indexService = new IndexService("mainnet")
 
 
