@@ -23,7 +23,7 @@ import { privateKeyToAccount } from "viem/accounts";
 
 
 
-const clientId = "BPi5PB_UiIZ-cPz1GtV5i1I2iOSOHuimiXBI0e-Oe_u6X3oVAbCiAZOTEBtTXw4tsluTITPqA8zMsfxIKMjiqNQ"; // get from https://dashboard.web3auth.io
+const clientId = "BExsPtvjmmO2XTkX1ndXm1E2-fdMk0ZzIC_sM6aF5KyazN05sN1uHgkmNB6YV8MW8I5SWnpjdbpia-AUsAnRPJg"; // get from https://dashboard.web3auth.io
 
 
 const chainConfig = {
@@ -46,7 +46,7 @@ const privateKeyProvider = new EthereumPrivateKeyProvider({
 
 const web3auth = new Web3Auth({
   clientId,
-  web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_MAINNET,
+  web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
     privateKeyProvider,
 });
 
