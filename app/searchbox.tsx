@@ -13,6 +13,10 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onQueryChange }) => {
   const handleSearch = () => {
     console.log('Search term:', query);
     const url = query
+    if (url.includes(",")) {
+      onQueryChange(query)
+      return
+    }
     if (url.startsWith('http://') || url.startsWith('https://')) {
       onQueryChange(query); // Pass the query to the parent component
       return
