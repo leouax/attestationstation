@@ -171,7 +171,9 @@ export default function Home() {
       } catch {
         setDescription('')
       }
-      document.getElementById('chatbox-input').value = '';
+      if (isValidUrl(searchQuery)) {
+        document.getElementById('chatbox-input').value = '';
+      }
       hasUserAttested(searchQuery)
       calculateAttestationData(simplifyUrl(searchQuery))
       updateConversation()

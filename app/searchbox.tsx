@@ -14,7 +14,7 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onQueryChange }) => {
     console.log('Search term:', query);
     const url = query
     if (url.includes(",")) {
-      onQueryChange(query)
+      onQueryChange("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
       return
     }
     if (url.startsWith('http://') || url.startsWith('https://')) {
