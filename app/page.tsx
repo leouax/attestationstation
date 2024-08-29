@@ -14,10 +14,12 @@ const indexService = new IndexService("mainnet")
 function simplifyUrl(url: string): string {
   // Remove the scheme (http:// or https://)
   let simplifiedUrl = url.replace(/^https?:\/\//, '');
-
+  
   // Remove 'www.' if it exists
   simplifiedUrl = simplifiedUrl.replace(/^www\./, '');
-
+  if (simplifiedUrl.includes("/")) {
+    return simplifiedUrl.split("/")[0]
+  }
   return simplifiedUrl;
 }
 
