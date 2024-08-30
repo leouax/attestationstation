@@ -18,7 +18,12 @@ function simplifyUrl(url: string): string {
   // Remove 'www.' if it exists
   simplifiedUrl = simplifiedUrl.replace(/^www\./, '');
   if (simplifiedUrl.includes("/")) {
-    return simplifiedUrl.split("/")[0]
+    if (simplifiedUrl.split("/")[1].length > 1) {
+      console.log(simplifiedUrl)
+      return simplifiedUrl
+    } else {
+      return simplifiedUrl.split("/")[0]
+    }
   }
   return simplifiedUrl;
 }
