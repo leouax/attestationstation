@@ -7,6 +7,7 @@
   padding: 5rem;
   min-height: 100vh;
   background-color: #eb8334;
+  font-family: var(--font-mono);
 }
 
 
