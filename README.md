@@ -4,12 +4,13 @@ This is an ETHOnline 2024 project
 
 
 
-### Installing Dependencies 
+### Deploying Locally 
 
 First, git clone this repository
 
 ```
 git clone https://github.com/leouax/attestationstation.git
+cd attestationstation
 ```
 
 Next, to install dependencies:
