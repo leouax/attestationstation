@@ -1,8 +1,17 @@
 # AttestationStation
 
-This is an ETHOnline 2024 project
+*An ETHOnline 2024 project*
+
+This is a platform for users to rate and review the safety and quality of web applications. Think TrustPilot, but for anything hosted on https
+
+To try it out, go to [attestationstation.vercel.app](https://www.attestationstation.vercel.app)
+
+To learn more, [read the section below](#how-it-works)
 
 
+## How It Works
+
+AttestationStations is built on top of three hackathon sponsors 
 
 ### Deploying Locally 
 
@@ -27,5 +36,5 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Alternatively, you can view the deployed version of the website at [https://www.attestationstation.vercel.app](attestationstation.vercel.app)
+Alternatively, you can view the deployed version of the website at [attestationstation.vercel.app](https://www.attestationstation.vercel.app)
 
