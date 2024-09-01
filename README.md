@@ -2,11 +2,11 @@
 
 This is an ETHOnline 2024 project
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Installing Dependencies 
 
-First, git clone this reposity 
+### Installing Dependencies 
+
+First, git clone this repository
 
 ```
 git clone https://github.com/leouax/attestationstation.git
