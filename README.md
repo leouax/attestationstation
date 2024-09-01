@@ -2,19 +2,21 @@
 
 *An ETHOnline 2024 project*
 
-This is a platform for users to rate and review the safety and quality of web applications. Think TrustPilot, but for anything hosted on https
+Attest to or review the safety and quality of a memecoin, defi protocol, or website. Think TrustPilot, but for anything hosted online on https
 
 To try it out, go [here](https://attestationstation.vercel.app)
 
-To learn more, [read the section below](#how-it-works)
+To learn more, [read this section](#how-it-works)
 
 For instructions on local deployment, [go here](#deploying-locally)
 
 ## How It Works
 
-AttestationStations is built on top of three hackathon sponsors 
+AttestationStations utilizes Web3Auth, Sign Protocol, and Xmtp 
 
-### Deploying Locally 
+
+
+## Deploying Locally 
 
 First, git clone this repository
 
