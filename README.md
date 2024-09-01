@@ -8,7 +8,7 @@ To try it out, go [here](https://attestationstation.vercel.app)
 
 To learn more, [read this section](#how-it-works)
 
-For instructions on local deployment, [go here](#deploying-locally)
+For instructions on local deployment, go [here](#deploying-locally)
 
 ## How It Works
 
