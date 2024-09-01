@@ -4,7 +4,7 @@
 
 This is a platform for users to rate and review the safety and quality of web applications. Think TrustPilot, but for anything hosted on https
 
-To try it out, go to [attestationstation.vercel.app](https://attestationstation.vercel.app)
+To try it out, go [here](https://attestationstation.vercel.app)
 
 To learn more, [read the section below](#how-it-works)
 
