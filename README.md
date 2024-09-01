@@ -12,8 +12,19 @@ For instructions on local deployment, go [here](#deploying-locally)
 
 ## How It Works
 
-AttestationStations utilizes Web3Auth, Sign Protocol, and Xmtp 
+### Sign Protocol 
 
+AttestationStation uses Sign Protocol for creating and storing attestations (ratings) of users' scores for websites. All attestations are stored in one schema. Upon rating a website, an attestation is constructed containing the url of the website that is being rated, the safety score that the user chose, and the overall score that the user chose. The user is then prompted to sign a message to finalize their attestation. Users can only rate a website once. 
+
+When fetching the safety and overall scores of a website, the ```indexService.queryAttestationList()``` function is called to get a json list containg all attestations. As the script sorts through these attestations it aggregates the safety and overall score of every attestation that has the url of the queried website. Once the script has sorted through all the attestations, it averages these safety and overall scores to be displayed for the user. 
+
+Yes, this method is inefficient and each website should have its own schema. This logic will be changed post-hackathon. 
+
+### XMTP 
+
+AttestationStation uses XMTP group chats to give users the opportunity to chat about websites in addition to testifying to their credibility/uncredibility. The server managing the group chats is hosted on aws. The server stores a key:pair dictionary of urls to group chat identifiers. For every url that a user queries, an api call is made to the server to create a group chat corresponding to the url if it didn't already exist. The server is also used to update the group chat display in the frontend when a user sends a message or searches a different url. When a user sends a message in a chat, the server does it on their behalf. The code was written this way because there wasn't an XMTP v3 Web SDK (only a Node.js SDK, which is what the server was built on) at the time of development. When XMTP does create a Web SDK, this project will be updated to have users sign & send their own messages.  
+
+The code of this backend aws server can be found in the repository here 
 
 
 ## Deploying Locally 
