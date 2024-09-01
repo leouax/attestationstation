@@ -39,6 +39,10 @@ First, git clone this repository
 
 ```
 git clone https://github.com/leouax/attestationstation.git
+```
+
+Enter the directory: 
+```
 cd attestationstation
 ```
 
