@@ -2,7 +2,7 @@
 
 *An ETHOnline 2024 project*
 
-Attest to or review the safety and quality of a memecoin, defi protocol, or website. Think TrustPilot, but for anything hosted online on https
+Attest to or review the safety and quality of a memecoin, defi protocol, or website. Think TrustPilot, but for anything on https
 
 To try it out, go [here](https://attestationstation.vercel.app)
 
