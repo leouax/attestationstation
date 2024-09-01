@@ -39,5 +39,5 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Alternatively, you can view the deployed version of the website at [attestationstation.vercel.app](https://www.attestationstation.vercel.app)
+Alternatively, you can view the deployed version of the website at [attestationstation.vercel.app](https://attestationstation.vercel.app)
 
