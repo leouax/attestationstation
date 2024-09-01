@@ -28,7 +28,7 @@ The code of this backend aws server can be found in the repository here
 
 ### Web3Auth 
 
-AttestationStation uses web3auth as a login provider. Web3Auth was used because it enables non-wallet logins, which means even non web3-users can use the platform to rate websites. In this project I used the Plug & Play Web - Modal SDK with external wallet logins enabled through the web3auth metamask-adapter. 
+AttestationStation uses web3auth as a login provider. Web3Auth was used because it enables non-wallet logins, which is important as non web3-users should be able to use the platform. In this project I used the Plug & Play Web - Modal SDK with external wallet logins enabled through the web3auth metamask-adapter. 
 
 When it comes to signing attestations, the web3auth.provider object is used. If the user is connected to a social login, the web3auth.provider.request({method: "eth_private_key"}) method is called to get the private key of their generated wallet and sign the message for them. If the user is connected to a wallet, they will get a pop-up prompting them to sign the message.
 
