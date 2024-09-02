@@ -20,6 +20,8 @@ When viewing the rating of a website, the average safety and overall score is ca
 
 Users can also anonymously chat about their experience in addition to giving websites numerical ratings. 
 
+## How it's built 
+
 
 ### Sign Protocol 
 
