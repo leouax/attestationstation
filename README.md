@@ -4,11 +4,12 @@
 
 Attest to or review the safety and quality of a memecoin, defi protocol, or website. Think TrustPilot, but for anything on https
 
-Click [here](https://attestationstation.vercel.app) to try it out 
-
 To learn more, read [this](#how-it-works) section
 
 Go [here](#deploying-locally) for instructions on local deployment
+
+[https://attestationstation.vercel.app](https://attestationstation.vercel.app) 
+
 
 ## How It Works
 
