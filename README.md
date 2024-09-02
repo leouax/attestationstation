@@ -26,11 +26,14 @@ Users can also anonymously chat about their experience in addition to giving web
 
 ### Sign Protocol 
 
-AttestationStation uses Sign Protocol for creating and storing attestations (ratings) of users' scores for websites. All attestations are stored in one schema. Upon rating a website, an attestation is constructed containing the url of the website that is being rated, the safety score that the user chose, and the overall score that the user chose. The user is then prompted to sign a message to finalize their attestation. Users can only rate a website once. 
+AttestationStation uses Sign Protocol for creating and storing attestations (ratings) of users' scores for websites. All attestations are stored in one schema. Upon rating a website, an attestation is constructed containing the url of the website that is being rated, the safety score that the user chose, and the overall score that the user chose. The user is then prompted to sign a message to upload their attestation. Users can only rate a website once. 
 
 When fetching the safety and overall scores of a website, the ```indexService.queryAttestationList()``` function is called to get a json list containg all attestations. As the script sorts through these attestations it aggregates the safety and overall score of every attestation that has the url of the queried website. Once the script has sorted through all the attestations, it averages these safety and overall scores to be displayed for the user. 
 
-Yes, this method is inefficient and each website should have its own schema. This logic will be changed post-hackathon. 
+However, this method is inefficient and each website should have its own schema. This logic will be changed post-hackathon. 
+
+Schema Id: {add schema id here}
+Storage provider used: Arweave mainnet
 
 ### XMTP 
 
