@@ -17,7 +17,7 @@ Go [here](#deploying-locally) for instructions on local deployment
 
 AttestationStation is a platform for users to rate webpages or web applications and view other users' ratings. When rating a website, users give it a safety score and an overall (general) score. For both of these ratings, users choose an integer between zero and five. Zero represents scams and a very poor general experience, while five represents perfectly credible websites and a very good general experience. Once users have selected their ratings, they click a button to submit them. Users may only rate a website once. 
 
-When viewing the rating of a website, the average safety and overall score is calculated and displayed. If no one has yet rated the website in question, it has a safety and overall score of NaN. 
+When viewing the rating of a website, the average safety and overall score is calculated and displayed. If no one has yet rated the website in question, it has a safety and overall score of null. 
 
 Users can also anonymously chat about their experience in addition to giving websites numerical ratings. 
 
