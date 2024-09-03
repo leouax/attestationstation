@@ -271,8 +271,9 @@ export default function Home() {
 
   function handleQueryFail() {
         console.log("handling query error")
-
+    if (urlValidity) {
     setQueryError(true)
+    } 
       setMetadata('')
 
   }
