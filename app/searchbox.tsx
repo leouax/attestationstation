@@ -18,14 +18,14 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onQueryChange }) => {
       return
     }
     if (url.startsWith('http://') || url.startsWith('https://')) {
-      onQueryChange(query); // Pass the query to the parent component
+      onQueryChange(query.replace(/\s+/g, '')); // Pass the query to the parent component
       return
     }
     if (url.includes('.')) {
-      onQueryChange('https://' + url); // Pass the query to the parent component
+      onQueryChange(('https://' + url).replace(/\s+/g, '')); // Pass the query to the parent component
       return
     }
-    onQueryChange(query)
+    onQueryChange(query.replace(/\s+/g, ''))
   };
     
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
