@@ -16,7 +16,7 @@ function simplifyUrl(url: string): string {
   let simplifiedUrl = url.replace(/^https?:\/\//, '');
   
   // Remove 'www.' if it exists
-  simplifiedUrl = simplifiedUrl.replace(/^www\./, '');
+  simplifiedUrl = (simplifiedUrl.replace(/^www\./, '')).toLowerCase();
   if (simplifiedUrl.includes("/")) {
     if (simplifiedUrl.split("/")[1].length > 1) {
       console.log(simplifiedUrl)
