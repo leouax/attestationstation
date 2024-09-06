@@ -39,7 +39,7 @@ Storage provider used: Arweave mainnet
 
 AttestationStation uses XMTP group chats to give users the opportunity to chat about websites in addition to testifying to their credibility/uncredibility. The server managing the group chats is hosted on aws. The server stores a key:pair dictionary of urls to group chat identifiers. For every url that a user queries, an api call is made to the server to create a group chat corresponding to the url if it didn't already exist. The server is also used to update the group chat display in the frontend when a user sends a message or searches a different url. When a user sends a message in a chat, the server does it on their behalf. The code was written this way because there wasn't an XMTP v3 Web SDK (only a Node.js SDK, which is what the server was built on) at the time of development. When XMTP does create a Web SDK, this project will be updated to have users sign & send their own messages.  
 
-The code of this backend aws server can be found in the repository here 
+The code of this backend aws server can be found in the repository [here](https://github.com/leouax/attestationstation-xmtp-backend/tree/main)
 
 ### Web3Auth 
 
