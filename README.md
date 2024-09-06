@@ -33,7 +33,8 @@ When fetching the safety and overall scores of a website, the ```indexService.qu
 However, this method is inefficient and each website should have its own schema. This logic will be changed post-hackathon. 
 
 Schema Id: {add schema id here}
-Storage provider used: Arweave mainnet
+
+Storage provider: Arweave mainnet
 
 ### XMTP 
 
