@@ -60,7 +60,7 @@ export async function fetchAllAttestations() {
 
 async function fetchMessagesByUrl(url:string) {
     try {
-          const response = await fetch('https://18.188.15.55:443/api/fetch?url=' + url);
+          //const response = await fetch('https://18.188.15.55:443/api/fetch?url=' + url);
       const data = await response.json();
 
         console.log(data)
@@ -143,7 +143,7 @@ export default function Home() {
   async function updateConversation() {
     console.log("fetching conversation for given url")
       try {
-          const response = await fetch('https://18.188.15.55:443/api/fetch?url=' + simplifyUrl(searchQuery));
+          //const response = await fetch('https://18.188.15.55:443/api/fetch?url=' + simplifyUrl(searchQuery));
         const data = await response.json();
         setConversation(data)
           return data
@@ -206,7 +206,7 @@ export default function Home() {
       if (urlValidity) {
         const fetchData = async (url:string) => {
             try {
-              const response = await fetch('https://52.14.47.63:443/api/fetch?url='+url);
+              //const response = await fetch('https://52.14.47.63:443/api/fetch?url='+url);
               const data = await response.json(); 
               return data
             } catch (error) { 
@@ -241,7 +241,7 @@ export default function Home() {
     if (urlValidity) {
       const fetchData = async (url: string) => {
         try {
-          const response = await fetch('https://52.14.47.63:443/api/fetch?url=' + url);
+         // const response = await fetch('https://52.14.47.63:443/api/fetch?url=' + url);
           const data = await response.json();
           return data
         } catch (error) {
@@ -325,7 +325,7 @@ export default function Home() {
             if (!loggedIn) {
               return
             } else {
-              const response = await fetch(`https://18.188.15.55:443/api/fetch?msg=${value}&url=${simplifyUrl(searchQuery)}`)
+             // const response = await fetch(`https://18.188.15.55:443/api/fetch?msg=${value}&url=${simplifyUrl(searchQuery)}`)
               console.log(response)
               await updateConversation()
               // lolz
@@ -451,7 +451,7 @@ export default function Home() {
                     if (!loggedIn) {
                      return
                     } else {
-                      const response = await fetch(`https://18.188.15.55:443/api/fetch?msg=${encodeURIComponent(document.getElementById('chatbox-input').value)}&url=${simplifyUrl(searchQuery)}`)
+                   //   const response = await fetch(`https://18.188.15.55:443/api/fetch?msg=${encodeURIComponent(document.getElementById('chatbox-input').value)}&url=${simplifyUrl(searchQuery)}`)
                       console.log(response)
                       await updateConversation()
                       document.getElementById('chatbox-input').value = ''
